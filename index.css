@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+#heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #edeef0;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    background-image: linear-gradient(180deg,rgb(141, 6, 153),#f34121,rgb(137, 144, 5));
+    background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-77201.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+.main_div{
+    width:10%;
+    min-width: 540px;
+    background: linear-gradient(160deg,rgb(245, 90, 209),#f4b96c);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 2px #494545a9;
+
+}
+.heading_1{
+    color:#fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.img1{
+    width:45px;
+    margin-left:20px ;
+}
+.div_2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+#input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    
+}
+#btn1{
+    border: none;
+    outline: none;
+    padding: 16px 16px;
+    background-image: url("https://pngimg.com/d/buttons_PNG128.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:#c11717;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    list-style-type: none;
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://static-00.iconduck.com/assets.00/radio-button-unchecked-icon-512x512-k1fkebfk.png");
+    background-size: cover;
+    background-position: center;
+    top:9px;
+    left:8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/9437/9437972.png");
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:0;
+    width:40px;
+    height: 40px;
+    font-size: 23px;
+    color:#555;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10px;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+
+#footer{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    margin-top: 600px;
+
+}
+
+@media only screen and (max-width:920px) and (min-width:320px) {
+   
+    .main_div{
+        width:10%;
+        min-width:400px;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    
+    }
+    .container{
+        width:115%;
+
+    }
+  
+    #input{
+        padding:5px;
+    }
+    #btn1{
+        padding: 16px 18px;
+        font-size: 16px;
+      
+    }
+
+
+}
